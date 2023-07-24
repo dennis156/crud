@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="./src/styles/bulma.min.css">
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://bulma.io">
+          <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX0yNkU79j3iDYiFMo8yGZIXZFcz1sL2Nytg&usqp=CAU" ></a><img src="./src/img/logo mio.jpg" alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="200" height="300"> </a>
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      </nav>
+      <section class="hero is-primary">
+        <div class="hero-body">
+          <p class="title">
+            CRUD
+          </p>
+          <p class="subtitle">
+            LISTA DE TAREAS
+          </p>
+        </div>
+      </section>
+      <section class="container">
+        <form class="form-horizontal">
+            <fieldset>
+           <!-- comentarios-->
+            <!-- Form Name -->
+            <legend>escuesta</legend>
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="Tarea">TAREA</label>  
+              <div class="col-md-4">
+              <input 
+              id="tarea"
+               name="tareaid" 
+               type="text"
+                placeholder=""
+                 class="form-control input-md"
+                  required="">
+                
+              </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="DESCRIPCION ID">DESCRIPCION</label>  
+              <div class="col-md-5">
+                <!---->
+              <input
+               id="DESCRIPCION ID"
+                name="DESCRIPCION ID" 
+                type="text"
+                 placeholder=""
+                  class="form-control input-md"
+                   required="">
+                
+              </div>
+            </div>
+            
+            <!-- Button -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="BTN ID"></label>
+              <div class="col-md-4">
+                <button
+                 id="BTN ID" 
+                name="BTN ID"
+                onclick="enviar(event)"
+                 class="btn btn-success">enviar</button>
+              </div>
+            </div>
+            
+            </fieldset>
+            </form>
+      </section>
+      <script src="./src/scripts/main.js"></script>
+</body>
+</html>
